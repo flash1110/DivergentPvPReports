@@ -1,0 +1,24 @@
+### Backend Settings ###
+backend:
+  driver: "FLATFILE" # MONGO, REDIS, MYSQL, SQLITE, FLATFILE
+  sqlite:
+    fileName: "storage.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    username: "root"
+    password: "password"
+    database: "divergentpvp"
+  redis:
+    host: "localhost"
+    port: 6379
+    pass: "" # Leave empty for no authentication
+  mongo:
+    host: "localhost"
+    port: 27017
+    database: "divergentpvp"
+    auth:
+      enable: false
+      username: "root"
+      password: "password"
+      authDb: "admin"
